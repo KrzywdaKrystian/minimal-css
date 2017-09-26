@@ -18,7 +18,7 @@ gulp.task('watch-js', watchJs);
 
 //functions
 function buildSass() {
-    gulp.src('src/scss/main.scss')
+    gulp.src('src/scss/minimal.scss')
         .pipe(sass(cssCompressed).on('error', sass.logError))
         .pipe(concat('app.css'))
         .pipe(sourcemaps.write('./'))
