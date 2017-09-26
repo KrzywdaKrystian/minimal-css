@@ -1,13 +1,7 @@
 // minimal, responsive css framework
 @import "util/util";
 // components
-@import "components/button";
-
-@mixin setupAll {
-  // components
-  @include button;
-
-}
+@import "components/componenets";
 
 // configuration - all variables is defined,
 // you can uncomment and change default values below
@@ -20,6 +14,6 @@
 // );
 
 // setup all or include components you want
-@include setupAll;
+@include setup-all;
 // or
 // @include button;

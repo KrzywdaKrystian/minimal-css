@@ -1,36 +1,36 @@
 // Transform px to em
-@function pxToEm($value) {
+@function px-to-em($value) {
   $value: strip-unit($value);
   @return $value / 16 * 1em;
 }
 
 // Transform px to percents
-@function pxToPercents($value) {
+@function px-to-percents($value) {
   $value: strip-unit($value);
   @return $value / 16 * 100%;
 }
 
 // Transform em to px
-@function emToPx($value) {
+@function em-to-px($value) {
   $value: strip-unit($value);
   @return $value * 16px
 }
 
 // Transform em to percents
-@function emToPercents($value) {
+@function em-to-percents($value) {
   $value: strip-unit($value);
-  $emToPx: strip-unit(emToPx($value));
-  @return pxToPercents($emToPx);
+  $emToPx: strip-unit(em-to-px($value));
+  @return px-to-percents($emToPx);
 }
 
 // Transform percents to px
-@function percentsToPx($value) {
+@function percents-to-px($value) {
   $value: strip-unit($value);
   @return $value/100 *16px;
 }
 
 // transform percents to em
-@function percentsToEm($value) {
+@function percents-to-em($value) {
   $value: strip-unit($value);
   @return $value/100 * 1em;
 }
