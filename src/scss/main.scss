@@ -1,3 +1,14 @@
-.main {
-  color: #fff;
+// minimal, responsive css framework
+@import "util/util";
+
+#div {
+ @include breakpoint(small-up) { /* small-up */ display: block; };
+ @include breakpoint(small-only) { /* small-only */ display: inline-block; };
+ @include breakpoint(small-down) { /* small-down */display: block; };
+ @include breakpoint(medium-up) { /* medium-up */ display: block; };
+ @include breakpoint(medium-only) { /* medium-only */ display: block; };
+ @include breakpoint(medium-down) { /* medium-down */display: block; };
+ @include breakpoint(large-up) { /* large-up */ display: table; };
+ @include breakpoint(large-only) { /* large-only */ display: table; };
+ @include breakpoint(large-down) { /* large-down */display: table; };
 }
