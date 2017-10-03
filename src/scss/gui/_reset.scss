@@ -47,6 +47,21 @@ $default-border-box: border-box!default;
     margin-bottom: 0;
   }
 
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: nth(nth($colors-palette, 2), 2);
+    transition: all .3s;
+    &:hover {
+      color: scale-color(nth(nth($colors-palette, 2), 2), $lightness: -15%);
+    }
+  }
+
   a:active,
   a:hover {
     outline: 0;

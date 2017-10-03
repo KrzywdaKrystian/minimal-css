@@ -11,6 +11,7 @@ $button-padding: px-to-em(10) px-to-em(12) !default;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
     vertical-align: middle;
     border: px-to-em(1) solid transparent;
+    padding: $button-padding;
     @each $name, $color in $colors-palette {
       &.#{$name} {
         background-color: $color;

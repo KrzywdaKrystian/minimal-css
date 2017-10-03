@@ -499,6 +499,22 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #938BA1;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #7c728d;
+}
+
 a:active,
 a:hover {
   outline: 0;
@@ -538,6 +554,7 @@ th {
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 0.0625em solid transparent;
+  padding: 0.625em 0.75em;
 }
 
 .button.background {
