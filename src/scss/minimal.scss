@@ -2,6 +2,7 @@
 @import "util/util";
 // gui
 @import "gui/color";
+@import "gui/typography";
 @import "gui/reset";
 @import "gui/grid";
 // components
@@ -30,9 +31,47 @@
 
 // $grid-view-columns: 12;
 // $grid-max-width: px-to-em(1200);
+
 // $default-row-spacing: px-to-em(15);
 // $default-font-size: px-to-em(14);
 // $default-border-box: border-box;
+// $default-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+// $button-font-size: px-to-em(14) !default;
+// $button-padding: px-to-em(10) px-to-em(12);
+// $button-radius: px-to-em(8);
+// $button-size: (
+//         small: (
+//                 font-size: px-to-em(12),
+//                 padding: px-to-em(6) px-to-em(9)
+//         ),
+//         medium: (
+//                 font-size: $button-font-size,
+//                 padding: $button-padding
+//         ),
+//         large: (
+//                 font-size: px-to-em(18),
+//                 padding: px-to-em(10) px-to-em(12)
+//         )
+// );
+// $h-size: (
+//         (
+//                 h1: (font-size: px-to-em(24)),
+//                 h2: (font-size: px-to-em(21)),
+//                 h3: (font-size: px-to-em(20)),
+//                 h4: (font-size: px-to-em(18)),
+//                 h5: (font-size: px-to-em(16)),
+//                 h6: (font-size: px-to-em(14))
+//         ),
+//         (
+//                 h1: (font-size: px-to-em(48)),
+//                 h2: (font-size: px-to-em(42)),
+//                 h3: (font-size: px-to-em(40)),
+//                 h4: (font-size: px-to-em(36)),
+//                 h5: (font-size: px-to-em(32)),
+//                 h6: (font-size: px-to-em(28))
+//         )
+// );
 
 // setup all or include components you want
 // set all components

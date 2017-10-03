@@ -1,0 +1,53 @@
+$default-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
+
+// headers
+$h-size: (
+        (
+                h1: (font-size: px-to-em(24)),
+                h2: (font-size: px-to-em(21)),
+                h3: (font-size: px-to-em(20)),
+                h4: (font-size: px-to-em(18)),
+                h5: (font-size: px-to-em(16)),
+                h6: (font-size: px-to-em(14))
+        ),
+        (
+                h1: (font-size: px-to-em(48)),
+                h2: (font-size: px-to-em(42)),
+                h3: (font-size: px-to-em(40)),
+                h4: (font-size: px-to-em(36)),
+                h5: (font-size: px-to-em(32)),
+                h6: (font-size: px-to-em(28))
+        )
+) !default;
+
+@for $h from 1 through length($h-size) {
+  @for $i from 1 through length($breakpoints) {
+    @if $i < length($h-size) {
+      $min: nth(nth($breakpoints, $i), 2);
+      $max: nth(nth($breakpoints, $i+1), 2);
+
+      @each $h-size, $values in nth($h-size, $i) {
+        @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+          #{$h-size}, .#{$h-size} {
+            @each $property, $value in $values {
+              #{$property}: #{$value};
+            }
+          }
+        }
+      }
+    } @else if $i == length($h-size) {
+      $min: nth(nth($breakpoints, $i), 2);
+      @each $h-size, $values in nth($h-size, $i) {
+        @media screen and (min-width: #{$min}) {
+          #{$h-size}, .#{$h-size} {
+            @each $property, $value in $values {
+              #{$property}: #{$value};
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

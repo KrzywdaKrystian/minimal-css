@@ -14,6 +14,7 @@ $default-border-box: border-box!default;
     background: nth(nth($colors-palette, 1), 2);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: $default-font-family;
   }
 
   *,

@@ -1,4 +1,21 @@
+$button-font-size: px-to-em(14) !default;
 $button-padding: px-to-em(10) px-to-em(12) !default;
+$button-radius: px-to-em(6) !default;
+
+$button-size: (
+        small: (
+                font-size: px-to-em(12),
+                padding: px-to-em(6) px-to-em(9)
+        ),
+        medium: (
+                font-size: $button-font-size,
+                padding: $button-padding
+        ),
+        large: (
+                font-size: px-to-em(18),
+                padding: px-to-em(10) px-to-em(12)
+        )
+) !default;
 
 @mixin button {
   .button {
@@ -11,12 +28,22 @@ $button-padding: px-to-em(10) px-to-em(12) !default;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
     vertical-align: middle;
     border: px-to-em(1) solid transparent;
+    color: #fff;
+    font-size: $button-font-size;
     padding: $button-padding;
+    border-radius: $button-radius;
     @each $name, $color in $colors-palette {
       &.#{$name} {
         background-color: $color;
         &:hover {
           background-color: scale-color($color, $lightness: -15%);
+        }
+      }
+    }
+    @each $name, $values in $button-size {
+      &.#{$name} {
+        @each $property, $value in $values {
+          #{$property}: #{$value};
         }
       }
     }
