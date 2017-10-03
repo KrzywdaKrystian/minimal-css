@@ -2,6 +2,8 @@
 @import "util/util";
 // gui
 @import "gui/color";
+@import "gui/reset";
+@import "gui/grid";
 // components
 @import "components/componenets";
 
@@ -26,8 +28,20 @@
 //        info: #44a0c5
 //);
 
+// $grid-view-columns: 12;
+// $grid-max-width: px-to-em(1200);
+// $default-row-spacing: px-to-em(15);
+// $default-font-size: px-to-em(14);
+// $default-border-box: border-box;
 
 // setup all or include components you want
+// set all components
+@mixin setup-all {
+  @include color;
+  @include reset;
+  @include button;
+}
+
 @include setup-all;
 // or
 // @include button;

@@ -1,0 +1,79 @@
+$default-font-size: px-to-em(14)!default;
+$default-border-box: border-box!default;
+
+@mixin reset {
+
+  html {
+    font-size: $default-font-size;
+    box-sizing: $default-border-box;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background: nth(nth($colors-palette, 1), 2);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+  img {
+    border: 0;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+
+}

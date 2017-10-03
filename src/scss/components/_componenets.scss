@@ -1,8 +1,2 @@
 // import all components
 @import "button";
-
-// set all components
-@mixin setup-all {
-  @include color;
-  @include button;
-}
