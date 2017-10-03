@@ -1,3 +1,23 @@
-@mixin button {
+$button-padding: px-to-em(10) px-to-em(12) !default;
 
+@mixin button {
+  .button {
+    outline: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    vertical-align: middle;
+    border: px-to-em(1) solid transparent;
+    @each $name, $color in $colors-palette {
+      &.#{$name} {
+        background-color: $color;
+        &:hover {
+          background-color: scale-color($color, $lightness: -15%);
+        }
+      }
+    }
+  }
 }

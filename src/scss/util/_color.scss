@@ -1,0 +1,17 @@
+$colors-palette: (
+        background: #D7FDEC,
+        primary: #938BA1,
+        secondary: #B0C6CE,
+        tertiary: #B2E4DB,
+        success: #33a15b,
+        danger: #a13903,
+        warning: #d9b514,
+        info: #44a0c5
+) !global;
+
+@mixin color {
+  @each $name, $color in $colors-palette {
+    .#{$name}-color { color: $color }
+    .#{$name}-bg { background-color: $color }
+  }
+}

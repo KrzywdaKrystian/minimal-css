@@ -1,0 +1,139 @@
+.background-color {
+  color: #D7FDEC;
+}
+
+.background-bg {
+  background-color: #D7FDEC;
+}
+
+.primary-color {
+  color: #938BA1;
+}
+
+.primary-bg {
+  background-color: #938BA1;
+}
+
+.secondary-color {
+  color: #B0C6CE;
+}
+
+.secondary-bg {
+  background-color: #B0C6CE;
+}
+
+.tertiary-color {
+  color: #B2E4DB;
+}
+
+.tertiary-bg {
+  background-color: #B2E4DB;
+}
+
+.success-color {
+  color: #33a15b;
+}
+
+.success-bg {
+  background-color: #33a15b;
+}
+
+.danger-color {
+  color: #a13903;
+}
+
+.danger-bg {
+  background-color: #a13903;
+}
+
+.warning-color {
+  color: #d9b514;
+}
+
+.warning-bg {
+  background-color: #d9b514;
+}
+
+.info-color {
+  color: #44a0c5;
+}
+
+.info-bg {
+  background-color: #44a0c5;
+}
+
+.button {
+  outline: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  vertical-align: middle;
+  border: 0.0625em solid transparent;
+}
+
+.button.background {
+  background-color: #D7FDEC;
+}
+
+.button.background:hover {
+  background-color: #94facc;
+}
+
+.button.primary {
+  background-color: #938BA1;
+}
+
+.button.primary:hover {
+  background-color: #7c728d;
+}
+
+.button.secondary {
+  background-color: #B0C6CE;
+}
+
+.button.secondary:hover {
+  background-color: #8dacb8;
+}
+
+.button.tertiary {
+  background-color: #B2E4DB;
+}
+
+.button.tertiary:hover {
+  background-color: #85d4c6;
+}
+
+.button.success {
+  background-color: #33a15b;
+}
+
+.button.success:hover {
+  background-color: #2b894d;
+}
+
+.button.danger {
+  background-color: #a13903;
+}
+
+.button.danger:hover {
+  background-color: #893003;
+}
+
+.button.warning {
+  background-color: #d9b514;
+}
+
+.button.warning:hover {
+  background-color: #b89a11;
+}
+
+.button.info {
+  background-color: #44a0c5;
+}
+
+.button.info:hover {
+  background-color: #358aac;
+}

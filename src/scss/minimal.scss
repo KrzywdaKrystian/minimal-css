@@ -5,6 +5,7 @@
 
 // configuration - all variables is defined,
 // you can uncomment and change default values below
+
 // $breakpoints: (
 //        small: 0,
 //        medium: 640px,
@@ -12,6 +13,17 @@
 //        xlarge: 1200px,
 //        xxlarge: 1440px,
 // );
+
+// $colors-palette: (
+//        primary: #147fa1,
+//        secondary: #44ce0c,
+//        tertiary: #B2E4DB,
+//        success: #33a15b,
+//        danger: #a13903,
+//        warning: #d9b514,
+//        info: #44a0c5
+//);
+
 
 // setup all or include components you want
 @include setup-all;
