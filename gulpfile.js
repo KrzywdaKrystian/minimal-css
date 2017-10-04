@@ -20,7 +20,7 @@ gulp.task('watch-js', watchJs);
 function buildSass() {
     gulp.src('src/scss/minimal.scss')
         .pipe(sass(cssCompressed).on('error', sass.logError))
-        .pipe(concat('app.css'))
+        .pipe(concat('minimal-css.css'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(staticPath + '/'))
 }
@@ -36,7 +36,7 @@ function buildJs() {
         'src/js/*/*/*.js',
         'src/js/*/*/*/*.js'])
         .pipe(sourcemaps.init())
-        .pipe(concat('app.js'))
+        .pipe(concat('minimal-css.js'))
         .pipe(gulpif(jsCompressed, uglify({
             mangle: false
         })))
