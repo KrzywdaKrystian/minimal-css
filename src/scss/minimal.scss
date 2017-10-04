@@ -1,12 +1,16 @@
 // minimal, responsive css framework
+
+// util
 @import "util/util";
+
 // gui
 @import "gui/color";
 @import "gui/typography";
 @import "gui/reset";
 @import "gui/grid";
+
 // components
-@import "components/componenets";
+@import "components/button";
 
 // configuration - all variables is defined,
 // you can uncomment and change default values below
@@ -30,7 +34,7 @@
 //);
 
 // $grid-view-columns: 12;
-// $grid-max-width: px-to-em(1200);
+$grid-max-width: px-to-em(1400);
 
 // $default-row-spacing: px-to-em(15);
 // $default-font-size: px-to-em(14);
@@ -76,8 +80,13 @@
 // setup all or include components you want
 // set all components
 @mixin setup-all {
+  // gui
   @include color;
+  @include grid;
   @include reset;
+  @include typography;
+
+  // components
   @include button;
 }
 

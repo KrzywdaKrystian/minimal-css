@@ -2,45 +2,49 @@ $grid-view-columns: 12!default;
 $grid-max-width: px-to-em(1200)!default;
 $default-row-spacing: px-to-em(15)!default;
 
-.grid {
-  margin: 0 auto;
-  overflow: hidden;;
-  width: 100%;
-  padding-left: $default-row-spacing;
-  padding-right: $default-row-spacing;
-  @include breakpoint(large-up) {
-    max-width: $grid-max-width;
+@mixin grid {
+
+  .grid {
+    margin: 0 auto;
+    overflow: hidden;;
+    width: 100%;
+    padding-left: $default-row-spacing;
+    padding-right: $default-row-spacing;
+    @include breakpoint(large-up) {
+      max-width: $grid-max-width;
+    }
   }
-}
-.row {
-  margin-left: -$default-row-spacing;
-  margin-right: -$default-row-spacing;
-  @include clearfix;
-}
+  .row {
+    margin-left: -$default-row-spacing;
+    margin-right: -$default-row-spacing;
+    @include clearfix;
+  }
 
-.column {
-  float: left;
-  position: relative;
-  padding-left: $default-row-spacing;
-  padding-right: $default-row-spacing;
-}
+  .column {
+    float: left;
+    position: relative;
+    padding-left: $default-row-spacing;
+    padding-right: $default-row-spacing;
+  }
 
-@for $i from 1 through length($breakpoints) {
-  @for $c from 1 through $grid-view-columns {
-    @if $i != length($breakpoints) {
-      $min: nth(nth($breakpoints, $i), 2);
-      $max: nth(nth($breakpoints, $i+1), 2);
-      @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
-        .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
-          width: $c/$grid-view-columns * 100%;
+  @for $i from 1 through length($breakpoints) {
+    @debug $i;
+    @for $c from 1 through $grid-view-columns {
+      @if $i < 3 {
+        $min: nth(nth($breakpoints, $i), 2);
+        $max: nth(nth($breakpoints, $i+1), 2);
+        @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+          .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
+            width: $c/$grid-view-columns * 100%;
+          }
         }
       }
-    }
-    @else {
-      $min: nth(nth($breakpoints, $i), 2);
-      @media screen and (min-width: #{$min}) {
-        .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
-          width: $c/$grid-view-columns * 100%;
+      @else if $i == 3 {
+        $min: nth(nth($breakpoints, $i), 2);
+        @media screen and (min-width: #{$min}) {
+          .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
+            width: $c/$grid-view-columns * 100%;
+          }
         }
       }
     }

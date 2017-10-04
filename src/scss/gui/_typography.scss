@@ -20,34 +20,36 @@ $h-size: (
         )
 ) !default;
 
-@for $h from 1 through length($h-size) {
-  @for $i from 1 through length($breakpoints) {
-    @if $i < length($h-size) {
-      $min: nth(nth($breakpoints, $i), 2);
-      $max: nth(nth($breakpoints, $i+1), 2);
+@mixin typography {
+  @for $h from 1 through length($h-size) {
+    @for $i from 1 through length($breakpoints) {
+      @if $i < length($h-size) {
+        $min: nth(nth($breakpoints, $i), 2);
+        $max: nth(nth($breakpoints, $i+1), 2);
 
-      @each $h-size, $values in nth($h-size, $i) {
-        @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
-          #{$h-size}, .#{$h-size} {
-            @each $property, $value in $values {
-              #{$property}: #{$value};
+        @each $h-size, $values in nth($h-size, $i) {
+          @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+            #{$h-size}, .#{$h-size} {
+              @each $property, $value in $values {
+                #{$property}: #{$value};
+              }
             }
           }
         }
-      }
-    } @else if $i == length($h-size) {
-      $min: nth(nth($breakpoints, $i), 2);
-      @each $h-size, $values in nth($h-size, $i) {
-        @media screen and (min-width: #{$min}) {
-          #{$h-size}, .#{$h-size} {
-            @each $property, $value in $values {
-              #{$property}: #{$value};
+      } @else if $i == length($h-size) {
+        $min: nth(nth($breakpoints, $i), 2);
+        @each $h-size, $values in nth($h-size, $i) {
+          @media screen and (min-width: #{$min}) {
+            #{$h-size}, .#{$h-size} {
+              @each $property, $value in $values {
+                #{$property}: #{$value};
+              }
             }
           }
         }
       }
     }
   }
-}
 
+}
 
