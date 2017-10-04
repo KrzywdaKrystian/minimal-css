@@ -1,19 +1,19 @@
-$button-font-size: px-to-em(14) !default;
-$button-padding: px-to-em(10) px-to-em(12) !default;
-$button-radius: px-to-em(6) !default;
+$button-font-size: px-to-rem(14) !default;
+$button-padding: px-to-rem(10) px-to-rem(12) !default;
+$button-radius: px-to-rem(6) !default;
 
 $button-size: (
         small: (
-                font-size: px-to-em(12),
-                padding: px-to-em(6) px-to-em(9)
+                font-size: px-to-rem(12),
+                padding: px-to-rem(6) px-to-rem(9)
         ),
         medium: (
                 font-size: $button-font-size,
                 padding: $button-padding
         ),
         large: (
-                font-size: px-to-em(18),
-                padding: px-to-em(10) px-to-em(12)
+                font-size: px-to-rem(18),
+                padding: px-to-rem(10) px-to-rem(12)
         )
 ) !default;
 
@@ -27,7 +27,7 @@ $button-size: (
     -webkit-appearance: none;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
     vertical-align: middle;
-    border: px-to-em(1) solid transparent;
+    border: px-to-rem(1) solid transparent;
     color: #fff;
     font-size: $button-font-size;
     padding: $button-padding;

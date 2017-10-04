@@ -3,20 +3,20 @@ $default-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !de
 // headers
 $h-size: (
         (
-                h1: (font-size: px-to-em(24)),
-                h2: (font-size: px-to-em(21)),
-                h3: (font-size: px-to-em(20)),
-                h4: (font-size: px-to-em(18)),
-                h5: (font-size: px-to-em(16)),
-                h6: (font-size: px-to-em(14))
+                h1: (font-size: px-to-rem(24), margin-bottom: px-to-rem(10)),
+                h2: (font-size: px-to-rem(21), margin-bottom: px-to-rem(10)),
+                h3: (font-size: px-to-rem(20), margin-bottom: px-to-rem(10)),
+                h4: (font-size: px-to-rem(18), margin-bottom: px-to-rem(10)),
+                h5: (font-size: px-to-rem(16), margin-bottom: px-to-rem(10)),
+                h6: (font-size: px-to-rem(14), margin-bottom: px-to-rem(10))
         ),
         (
-                h1: (font-size: px-to-em(48)),
-                h2: (font-size: px-to-em(42)),
-                h3: (font-size: px-to-em(40)),
-                h4: (font-size: px-to-em(36)),
-                h5: (font-size: px-to-em(32)),
-                h6: (font-size: px-to-em(28))
+                h1: (font-size: px-to-rem(48), margin-bottom: px-to-rem(20)),
+                h2: (font-size: px-to-rem(42), margin-bottom: px-to-rem(20)),
+                h3: (font-size: px-to-rem(40), margin-bottom: px-to-rem(20)),
+                h4: (font-size: px-to-rem(36), margin-bottom: px-to-rem(20)),
+                h5: (font-size: px-to-rem(32), margin-bottom: px-to-rem(20)),
+                h6: (font-size: px-to-rem(28), margin-bottom: px-to-rem(20))
         )
 ) !default;
 

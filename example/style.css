@@ -1,8 +1,8 @@
 html, body, .grid, .grid > .row { height: 100%; }
 .grid > .row > .column { min-height: 100%; }
 body { background: #f2f2f2; }
-.drawer { padding: 20px; }
+.drawer { padding: 20px; position: fixed; width: 100%;}
 .drawer .h6 { margin-bottom: 20px; }
 .drawer li a { display: block; padding: 8px 12px;  }
-.drawer li a:hover, .drawer li a.selected { background: #44a0c5; color: #fff;  }
+.drawer li a:hover, .drawer li a.selected, .drawer li a:target  { background: #44a0c5; color: #fff;  }
 .content { padding: 20px 15px 20px 40px; background: #fff; min-height: 100%; }

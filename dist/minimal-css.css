@@ -64,21 +64,20 @@
 
 .grid {
   margin: 0 auto;
-  overflow: hidden;
   width: 100%;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 @media screen and (min-width: 1024px) {
   .grid {
-    max-width: 87.5em;
+    max-width: 87.5rem;
   }
 }
 
 .row {
-  margin-left: -0.9375em;
-  margin-right: -0.9375em;
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
 }
 
 .row::before, .row::after {
@@ -93,8 +92,8 @@
 .column {
   float: left;
   position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
@@ -314,7 +313,7 @@
 }
 
 html {
-  font-size: 0.875em;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 
@@ -418,145 +417,169 @@ h6 {
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h1, .h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h2, .h2 {
-    font-size: 1.3125em;
+    font-size: 1.3125rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h3, .h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h4, .h4 {
-    font-size: 1.125em;
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h5, .h5 {
-    font-size: 1em;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h6, .h6 {
-    font-size: 0.875em;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h1, .h1 {
-    font-size: 3em;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h2, .h2 {
-    font-size: 2.625em;
+    font-size: 2.625rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h3, .h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h4, .h4 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h5, .h5 {
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h6, .h6 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h1, .h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h2, .h2 {
-    font-size: 1.3125em;
+    font-size: 1.3125rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h3, .h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h4, .h4 {
-    font-size: 1.125em;
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h5, .h5 {
-    font-size: 1em;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
   h6, .h6 {
-    font-size: 0.875em;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h1, .h1 {
-    font-size: 3em;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h2, .h2 {
-    font-size: 2.625em;
+    font-size: 2.625rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h3, .h3 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h4, .h4 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h5, .h5 {
-    font-size: 2em;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (min-width: 640px) {
   h6, .h6 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -569,11 +592,11 @@ h6 {
   -webkit-appearance: none;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
-  border: 0.0625em solid transparent;
+  border: 0.0625rem solid transparent;
   color: #fff;
-  font-size: 0.875em;
-  padding: 0.625em 0.75em;
-  border-radius: 0.375em;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.375rem;
 }
 
 .button.background {
@@ -641,16 +664,16 @@ h6 {
 }
 
 .button.small {
-  font-size: 0.75em;
-  padding: 0.375em 0.5625em;
+  font-size: 0.75rem;
+  padding: 0.375rem 0.5625rem;
 }
 
 .button.medium {
-  font-size: 0.875em;
-  padding: 0.625em 0.75em;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.75rem;
 }
 
 .button.large {
-  font-size: 1.125em;
-  padding: 0.625em 0.75em;
+  font-size: 1.125rem;
+  padding: 0.625rem 0.75rem;
 }

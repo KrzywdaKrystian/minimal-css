@@ -1,3 +1,9 @@
+// Transform px to rem
+@function px-to-rem($value) {
+  $value: strip-unit($value);
+  @return $value / 16 * 1rem;
+}
+
 // Transform px to em
 @function px-to-em($value) {
   $value: strip-unit($value);

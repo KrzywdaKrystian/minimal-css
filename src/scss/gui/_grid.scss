@@ -1,12 +1,11 @@
 $grid-view-columns: 12!default;
-$grid-max-width: px-to-em(1200)!default;
-$default-row-spacing: px-to-em(15)!default;
+$grid-max-width: px-to-rem(1200)!default;
+$default-row-spacing: px-to-rem(15)!default;
 
 @mixin grid {
 
   .grid {
     margin: 0 auto;
-    overflow: hidden;;
     width: 100%;
     padding-left: $default-row-spacing;
     padding-right: $default-row-spacing;
@@ -28,7 +27,6 @@ $default-row-spacing: px-to-em(15)!default;
   }
 
   @for $i from 1 through length($breakpoints) {
-    @debug $i;
     @for $c from 1 through $grid-view-columns {
       @if $i < 3 {
         $min: nth(nth($breakpoints, $i), 2);
