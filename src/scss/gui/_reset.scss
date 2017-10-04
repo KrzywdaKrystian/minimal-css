@@ -45,6 +45,7 @@ $default-border-box: border-box!default;
   }
 
   p {
+    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -90,6 +91,18 @@ $default-border-box: border-box!default;
   td,
   th {
     padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
   }
 
 }

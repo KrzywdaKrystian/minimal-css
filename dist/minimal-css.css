@@ -144,6 +144,7 @@
 
 .grid {
   margin: 0 auto;
+  overflow: hidden;
   width: 100%;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
@@ -171,6 +172,7 @@
 
 .column {
   float: left;
+  position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
@@ -641,6 +643,7 @@ strong {
 }
 
 p {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -687,6 +690,18 @@ table {
 td,
 th {
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
 }
 
 .button {

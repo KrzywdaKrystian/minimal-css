@@ -1,0 +1,5 @@
+.drawer { background: #f2f2f2; padding: 20px; }
+.drawer .h6 { margin-bottom: 20px; }
+.drawer li a { display: block; padding: 8px 12px;  }
+.drawer li a:hover { background: #44a0c5; color: #fff;  }
+.content { padding: 20px 15px 20px 40px; }

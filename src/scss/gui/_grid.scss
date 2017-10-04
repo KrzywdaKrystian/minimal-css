@@ -4,6 +4,7 @@ $default-row-spacing: px-to-em(15)!default;
 
 .grid {
   margin: 0 auto;
+  overflow: hidden;;
   width: 100%;
   padding-left: $default-row-spacing;
   padding-right: $default-row-spacing;
@@ -19,6 +20,7 @@ $default-row-spacing: px-to-em(15)!default;
 
 .column {
   float: left;
+  position: relative;
   padding-left: $default-row-spacing;
   padding-right: $default-row-spacing;
 }

@@ -5,7 +5,7 @@ var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
-var staticPath = 'static/';
+var staticPath = 'dist/';
 //expanded or compressed
 var cssCompressed = {outputStyle: 'expanded'};
 var jsCompressed = false;
