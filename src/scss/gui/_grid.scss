@@ -28,7 +28,7 @@ $default-row-spacing: px-to-rem(15)!default;
 
   @for $i from 1 through length($breakpoints) {
     @for $c from 1 through $grid-view-columns {
-      @if $i < 3 {
+      @if $i < 4 {
         $min: nth(nth($breakpoints, $i), 2);
         @media screen and (min-width: #{$min}) {
           .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
