@@ -30,15 +30,6 @@ $default-row-spacing: px-to-rem(15)!default;
     @for $c from 1 through $grid-view-columns {
       @if $i < 3 {
         $min: nth(nth($breakpoints, $i), 2);
-        $max: nth(nth($breakpoints, $i+1), 2);
-        @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
-          .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
-            width: $c/$grid-view-columns * 100%;
-          }
-        }
-      }
-      @else if $i == 3 {
-        $min: nth(nth($breakpoints, $i), 2);
         @media screen and (min-width: #{$min}) {
           .#{nth(nth($breakpoints, $i), 1)}-#{$c} {
             width: $c/$grid-view-columns * 100%;
