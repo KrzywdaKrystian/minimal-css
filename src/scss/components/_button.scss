@@ -17,6 +17,8 @@ $button-size: (
         )
 ) !default;
 
+$button-font-family: $default-font-family!default;
+
 @mixin button {
   .button {
     outline: 0;
@@ -29,6 +31,7 @@ $button-size: (
     vertical-align: middle;
     border: px-to-rem(1) solid transparent;
     color: #fff;
+    font-family: $button-font-family;
     font-size: $button-font-size;
     padding: $button-padding;
     border-radius: $button-radius;
