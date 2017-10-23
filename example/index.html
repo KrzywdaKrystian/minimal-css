@@ -135,10 +135,13 @@
     });
 
     function hashChange() {
-        if(a !== null) {
+        if(a && a.className) {
             a.className = '';
         }
         a = document.querySelectorAll('[href="' + location.hash +'"]')[0];
+        if(!a) {
+            a = document.querySelectorAll('[href="#main"]')[0];
+        }
         a.className = 'selected';
     }
 

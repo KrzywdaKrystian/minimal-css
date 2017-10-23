@@ -1,4 +1,6 @@
 $button-font-size: px-to-rem(14) !default;
+$button-font-family: $default-font-family!default;
+$button-text-transform: uppercase!default;
 $button-padding: px-to-rem(10) px-to-rem(12) !default;
 $button-radius: px-to-rem(6) !default;
 
@@ -17,7 +19,6 @@ $button-size: (
         )
 ) !default;
 
-$button-font-family: $default-font-family!default;
 
 @mixin button {
   .button {
