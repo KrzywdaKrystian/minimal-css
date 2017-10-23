@@ -43,10 +43,29 @@
         <div class="medium-8 large-9 column content">
             <section id="main">
                 <h1>Get started</h1>
-                <p>Description</p>
+                <p>minimal-css is simple and easy to use mini-framework that will allow you to quickly build your
+                    website or application.</p>
+                <p class="h7">Installing:</p>
+                <ol>
+                    <li>npm install https://github.com/KrzywdaKrystian/minimal-css.git -save</li>
+                    <li>include miniamal.scss (node-modules/minimal-css/src/minimal.scss) to your main SASS file</li>
+                    <li>set your settings via SASS references</li>
+                </ol>
+
 
                 <p class="h4">Colors</p>
                 <p>Colors</p>
+                <pre style="white-space: pre-wrap">
+<span>$colors-palette:</span> (
+        background: <span>#f2f2f2</span>,
+        primary: <span>#147fa1</span>,
+        secondary: <span>#938BA1</span>,
+        tertiary: <span>#B2E4DB</span>,
+        success: <span>#33a15b</span>,
+        danger: <span>#a13903</span>,
+        warning: <span>#d9b514</span>,
+        info: <span>#44a0c5</span>
+);                </pre>
 
                 <p class="h4">Media Queries</p>
                 <p>Media Queries</p>
@@ -135,11 +154,11 @@
     });
 
     function hashChange() {
-        if(a && a.className) {
+        if (a && a.className) {
             a.className = '';
         }
-        a = document.querySelectorAll('[href="' + location.hash +'"]')[0];
-        if(!a) {
+        a = document.querySelectorAll('[href="' + location.hash + '"]')[0];
+        if (!a) {
             a = document.querySelectorAll('[href="#main"]')[0];
         }
         a.className = 'selected';

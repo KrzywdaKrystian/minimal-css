@@ -23,15 +23,17 @@
 //        xxlarge: 1440px,
 // );
 
-// $colors-palette: (
-//        primary: #147fa1,
-//        secondary: #44ce0c,
-//        tertiary: #B2E4DB,
-//        success: #33a15b,
-//        danger: #a13903,
-//        warning: #d9b514,
-//        info: #44a0c5
-//);
+$colors-palette: (
+        background: #f2f2f2,
+        primary: #147fa1,
+        secondary: #938BA1,
+        tertiary: #B2E4DB,
+        success: #33a15b,
+        danger: #a13903,
+        warning: #d9b514,
+        info: #44a0c5
+);
+
 
 // $grid-view-columns: 12;
 $grid-max-width: px-to-rem(1400);

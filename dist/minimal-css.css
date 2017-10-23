@@ -1,25 +1,25 @@
 .background-color {
-  color: #f4fff5;
+  color: #f2f2f2;
 }
 
 .background-bg {
-  background-color: #f4fff5;
+  background-color: #f2f2f2;
 }
 
 .primary-color {
-  color: #938BA1;
+  color: #147fa1;
 }
 
 .primary-bg {
-  background-color: #938BA1;
+  background-color: #147fa1;
 }
 
 .secondary-color {
-  color: #B0C6CE;
+  color: #938BA1;
 }
 
 .secondary-bg {
-  background-color: #B0C6CE;
+  background-color: #938BA1;
 }
 
 .tertiary-color {
@@ -320,7 +320,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background: #f4fff5;
+  background: #f2f2f2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -366,12 +366,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: #938BA1;
+  color: #147fa1;
   transition: all .3s;
 }
 
 a:hover {
-  color: #7c728d;
+  color: #116c89;
 }
 
 a:active,
@@ -594,33 +594,34 @@ h6 {
   vertical-align: middle;
   border: 0.0625rem solid transparent;
   color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.875rem;
   padding: 0.625rem 0.75rem;
   border-radius: 0.375rem;
 }
 
 .button.background {
-  background-color: #f4fff5;
+  background-color: #f2f2f2;
 }
 
 .button.background:hover {
-  background-color: #a9ffb1;
+  background-color: #cecece;
 }
 
 .button.primary {
-  background-color: #938BA1;
+  background-color: #147fa1;
 }
 
 .button.primary:hover {
-  background-color: #7c728d;
+  background-color: #116c89;
 }
 
 .button.secondary {
-  background-color: #B0C6CE;
+  background-color: #938BA1;
 }
 
 .button.secondary:hover {
-  background-color: #8dacb8;
+  background-color: #7c728d;
 }
 
 .button.tertiary {

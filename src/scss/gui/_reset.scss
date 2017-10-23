@@ -11,7 +11,9 @@ $default-border-box: border-box!default;
   body {
     padding: 0;
     margin: 0;
-    background: nth(nth($colors-palette, 1), 2);
+    @if (map-get($colors-palette, 'background') != null) {
+      background: map-get($colors-palette, 'background');
+    }
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: $default-font-family;
@@ -57,11 +59,17 @@ $default-border-box: border-box!default;
 
   a {
     text-decoration: none;
-    color: nth(nth($colors-palette, 2), 2);
-    transition: all .3s;
-    &:hover {
-      color: scale-color(nth(nth($colors-palette, 2), 2), $lightness: -15%);
+    @if (map-get($colors-palette, 'primary') != null) {
+      color: map-get($colors-palette, 'primary');
     }
+    transition: all .3s;
+
+    @if (map-get($colors-palette, 'primary') != null) {
+      &:hover {
+        color: scale-color(map-get($colors-palette, 'primary'), $lightness: -15%);
+      }
+    }
+
   }
 
   a:active,

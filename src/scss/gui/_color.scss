@@ -1,12 +1,10 @@
+$background: #f4fff5!global;
+$primary: #44a0c5!global;
+$secondary: #938BA1!global;
+
 $colors-palette: (
-        background: #f4fff5,
-        primary: #938BA1,
-        secondary: #B0C6CE,
-        tertiary: #B2E4DB,
-        success: #33a15b,
-        danger: #a13903,
-        warning: #d9b514,
-        info: #44a0c5
+        primary: $primary,
+        secondary: $secondary,
 ) !global;
 
 @mixin color {
